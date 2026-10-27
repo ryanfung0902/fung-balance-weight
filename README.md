@@ -2,18 +2,18 @@
 
 此專案提供四合一入口，以及街市指針磅、物品圖片及教師驗證功能。入口連至各工具原有正式網址，保留其瀏覽器進度、後端 API、資料庫及教師設定。
 
-統一入口：https://market-scale-classroom.outshine-volleyball.workers.dev/
+統一入口：https://fung-math-hub.outshine-volleyball.workers.dev/
 
-- 磅一磅：https://market-scale-classroom.outshine-volleyball.workers.dev/scale
+- 磅一磅：https://fung-math-hub.outshine-volleyball.workers.dev/scale
 - 食物樂園：https://ten-math-food-playground.pages.dev/
 - G8A：https://g8a-math-helper.pages.dev/
 - G4：https://g4-math-helper.pages.dev/
 
 入口 `public/portal.html` 使用固定連結，所有裝置無須另外設定網址。G8A 與 G4 維持原有獨立部署，入口不讀寫學生紀錄。
 
-已發布網址：https://market-scale-classroom.outshine-volleyball.workers.dev/scale
+已發布網址：https://fung-math-hub.outshine-volleyball.workers.dev/scale
 
-工作紙及 QR Code 使用較易辨認的入口：https://market-scale-classroom.outshine-volleyball.workers.dev/fung-balance-weight 。這個路徑會顯示同一個模擬磅；Cloudflare 帳戶的 `outshine-volleyball.workers.dev` 部分維持不變，以免影響同帳戶其他網站。
+工作紙及 QR Code 使用較易辨認的入口：https://fung-math-hub.outshine-volleyball.workers.dev/fung-balance-weight 。這個路徑會顯示同一個模擬磅；Cloudflare 帳戶的 `outshine-volleyball.workers.dev` 部分維持不變，以免影響同帳戶其他網站。
 
 錶面參考指針磅使用等距刻線：0 放在 12 點鐘，重量順時針增加，最高量程在 0 左邊，方便分辨兩個位置。紅色指針會根據秤盤物件的總重量轉動，並有輕微回彈。
 
