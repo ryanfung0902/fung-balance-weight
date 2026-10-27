@@ -1,6 +1,15 @@
-# 磅一磅！獨立 Cloudflare Worker
+# 馮老師四合一學習平台與磅一磅！
 
-這個資料夾只包含街市指針磅、物品圖片及教師驗證功能。它會發布成獨立的 `workers.dev` 網址，與 G8A 數學系統分開。
+此專案提供四合一入口，以及街市指針磅、物品圖片及教師驗證功能。入口連至各工具原有正式網址，保留其瀏覽器進度、後端 API、資料庫及教師設定。
+
+統一入口：https://market-scale-classroom.outshine-volleyball.workers.dev/
+
+- 磅一磅：https://market-scale-classroom.outshine-volleyball.workers.dev/scale
+- 食物樂園：https://ten-math-food-playground.pages.dev/
+- G8A：https://g8a-math-helper.pages.dev/
+- G4：https://g4-math-helper.pages.dev/
+
+入口 `public/portal.html` 使用固定連結，所有裝置無須另外設定網址。G8A 與 G4 維持原有獨立部署，入口不讀寫學生紀錄。
 
 已發布網址：https://market-scale-classroom.outshine-volleyball.workers.dev/scale
 
@@ -28,6 +37,6 @@ npx wrangler deploy
 
 首次發布後，在 Cloudflare Worker 設定 `TEACHER_KEY` secret，供「直接讀重量」核對教師密碼。請勿把密碼寫入原始碼或提交到 Git。
 
-Cloudflare Worker 使用 `dist/` 內的靜態檔案，`/api/teacher/verify` 由 `worker/index.js` 回應。`/` 是正式入口，`/scale` 會顯示同一個模擬磅頁面。
+Cloudflare Worker 使用 `dist/` 內的靜態檔案，`/api/teacher/verify` 由 `worker/index.js` 回應。`/` 顯示四合一入口，`/scale` 與 `/fung-balance-weight` 顯示模擬磅頁面。
 
 正式連結須用實際手機在學校 Wi-Fi 關閉 VPN 測試，確認可開啟後才交給學生。
