@@ -20,6 +20,11 @@ export default {
     }
 
     if (pathname.startsWith('/api/')) return json({ error: '找不到此功能' }, 404)
+    if (pathname === '/') {
+      const url = new URL(request.url)
+      url.pathname = '/portal.html'
+      return env.ASSETS.fetch(new Request(url.toString(), request))
+    }
     return env.ASSETS.fetch(request)
   },
 }
