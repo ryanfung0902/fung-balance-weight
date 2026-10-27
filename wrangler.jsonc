@@ -1,5 +1,5 @@
 {
-  "name": "market-scale-classroom",
+  "name": "fung-math-hub",
   "account_id": "b24523a56c7462bbad28ecf7295a6ae3",
   "main": "./worker/index.js",
   "compatibility_date": "2026-10-06",
